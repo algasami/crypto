@@ -62,7 +62,7 @@ void decrypt(unsigned int *const str, struct Privkey privkey)
     }
 }
 
-int inp()
+int receive_input()
 {
 
     // Calculate Pub, Priv
@@ -125,7 +125,7 @@ int inp()
 
 int main()
 {
-    while (inp() >= 0)
+    while (receive_input() >= 0)
         ;
     return 0;
 }
