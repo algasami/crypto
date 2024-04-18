@@ -8,3 +8,6 @@ add_executable(rsa
 src/rsa.c
 src/utils.h
 )
+
+add_executable(djikstra
+src/djikstra.c)

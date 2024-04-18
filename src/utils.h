@@ -5,13 +5,11 @@
  * @param p Power
  * @param M modulo
  */
-unsigned int fastpowmod(unsigned x, unsigned p, unsigned int M)
-{
+unsigned int fastpowmod(unsigned x, unsigned p, unsigned int M) {
     unsigned int result = 1;
     unsigned int base = x;
 
-    while (p != 0)
-    {
+    while (p != 0) {
         if (p & 1)
             result = result * base % M;
         base = base * base % M;
@@ -23,11 +21,9 @@ unsigned int fastpowmod(unsigned x, unsigned p, unsigned int M)
 /**
  * @brief Euclidean Algorithm
  */
-unsigned int gcd(unsigned int a, unsigned int h)
-{
+unsigned int gcd(unsigned int a, unsigned int h) {
     unsigned int temp;
-    while (1)
-    {
+    while (1) {
         temp = a % h;
         if (temp == 0)
             return h;
