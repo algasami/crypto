@@ -1,6 +1,7 @@
 # Crypto
 
-This repository is a collection of fundamental algorithms used in cryptography.
+This repository is a collection of fundamental algorithms used in cryptography and also
+graph traversing algorithms (I put them in the wrong repository).
 
 ## Compiling
 
